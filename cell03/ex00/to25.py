@@ -4,7 +4,8 @@ def main():
     try:
         x = int(input("Enter a number less than 25\n"))
         i = x
-        if x > 25: print("Error")
+        if x > 25: 
+            print("Error")
         while i <= 25:
             print("Inside the loop, my variable is "f"{i}")
             if x == 25: break
