@@ -6,8 +6,12 @@ def main():
         y = int(input("Enter the second number\n"))
         res = x * y
         print(f"{x} x {y} = {res}")
-        print("The result is positive") if x > 0 else print("The result is negative")
-        if res == 0: print("The result is both positive and negative")
+        if res > 0:
+            print("The result is positive")
+        elif res < 0:
+            print("The result is negative")
+        else:
+            print("The result is both positive and negative")
     except:
         print("Enter a number!")
 
