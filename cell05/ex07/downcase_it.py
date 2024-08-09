@@ -5,9 +5,9 @@ import sys
 def main():
     params = len(sys.argv)
 
-    if not params or params == 1:
+    if not params or params != 1:
         print("none")
-    elif params > 1:
+    elif params == 2:
         for elem in sys.argv[1:]:
             elem = elem.lower()
             print(elem)
