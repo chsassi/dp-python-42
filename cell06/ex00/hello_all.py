@@ -3,12 +3,13 @@
 import sys
 
 class Greetings:
-    string : str
+
     def hello():
         print("Hello, everyone!")
 
 def main():
-    Greetings.hello()
+    obj = Greetings
+    obj.hello()
 
 if __name__ == "__main__":
     main()

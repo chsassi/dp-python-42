@@ -2,11 +2,12 @@
 
 class Greetings:
     name : str
-    def greetings(self, name):
-        if not isinstance(name, str):
-            print("It was not a name!")
-        elif name == "" or not name:
+
+    def greetings(self, name=None):
+        if name is None or name == "":
             print("Hello, noble stranger!")
+        elif not isinstance(name, str):
+            print("It was not a name!")
         else:
             print("Hello,", name)
 
@@ -14,8 +15,9 @@ class Greetings:
 def main():
 
     x = Greetings()
-    # Greetings.greetings("Christian")
-    x.greetings("Rick")
+    x.greetings("Chris")
+    x.greetings()
+    x.greetings(42)
 
 if __name__ == "__main__":
     main()
